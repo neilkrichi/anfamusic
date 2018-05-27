@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Helvetica Neue', sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .app {
@@ -9,7 +9,7 @@ body {
 }
 
 .app-logo {
-  width: 200px;
+  width: 220px;
   padding: 250px 0px 20px 0px;
 }
 
@@ -22,7 +22,7 @@ body {
   position: relative;
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .contact a:hover:before {
@@ -34,4 +34,19 @@ body {
   right: 0;
   height: 2px; /* ADJUST HEIGHT TO ADD WEIGHT */
   background: black; /* CHANGE COLOR TO SUIT */
+}
+
+iframe {
+  margin: 0px auto;
+  width:200px;
+  height: 200px;
+  overflow: hidden;
+  border: none;
+}
+
+@media only screen and (max-width: 789px) {
+  .app-logo {
+    width: 150px;
+    padding: 150px 0px 20px 0px;
+  }
 }
