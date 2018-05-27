@@ -8,25 +8,30 @@ body {
   text-align: center;
 }
 
-.app-title {
-  font-size: 4em;
-  margin: 0px auto;
-  padding: 250px 0px 300px 0px;
+.app-logo {
+  width: 200px;
+  padding: 250px 0px 20px 0px;
 }
 
 .contact {
   top: 60%;
-  display: flex;
-  justify-content: space-around;
 }
 
 .contact a {
+  display: inline-block;
+  position: relative;
   text-decoration: none;
   color: black;
   font-size: 18px;
 }
 
-.contact a:hover {
-  text-decoration: underline;
-  color: black;
+.contact a:hover:before {
+  transition: all 2s ease-in;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px; /* ADJUST HEIGHT TO ADD WEIGHT */
+  background: black; /* CHANGE COLOR TO SUIT */
 }
