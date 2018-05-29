@@ -26,7 +26,6 @@ body {
 }
 
 .contact a:hover:before {
-  transition: all 2s ease-in;
   content: "";
   position: absolute;
   top: 50%;
