@@ -13,6 +13,15 @@ body {
   padding: 250px 0px 20px 0px;
 }
 
+
+.link {
+  animation: blinker 2s ease-in-out infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0; }
+}
+
 .contact {
   top: 60%;
 }

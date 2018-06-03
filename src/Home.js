@@ -16,18 +16,24 @@ const Home = () => {
     <div className="app">
       <img className="app-logo" src={logo} />
       <div className='contact'>
-        <Typist startDelay={2500} cursor={cursor} avgTypingDelay={80}>
+        {/*
+          <Typist startDelay={2500} cursor={cursor} avgTypingDelay={80}>
           <a href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
-        </Typist>
-        <Typist startDelay={2500} cursor={cursor} avgTypingDelay={70}>
+          </Typist>
+          <Typist startDelay={2500} cursor={cursor} avgTypingDelay={70}>
           <a href="mailto:license@hivernagerecords.com?subject=Licensing Inquiry">License</a>
-        </Typist>
-        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:757AjSPjO6nQZgHR9lsVst&size=basic&theme=light&show-count=0"
-          allowtransparency="true" >
-        </iframe>
-      </div>
-    </div>
-  );
-}
+          </Typist>
+          */}
 
-export default Home;
+          <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
+          <a className="link" href="mailto:license@hivernagerecords.com?subject=Licensing Inquiry">License</a>
+
+          <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:757AjSPjO6nQZgHR9lsVst&size=basic&theme=light&show-count=0"
+            allowtransparency="true" >
+          </iframe>
+        </div>
+      </div>
+    );
+  }
+
+  export default Home;
