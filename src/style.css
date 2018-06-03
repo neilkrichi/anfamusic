@@ -15,39 +15,44 @@ body {
 
 
 .link {
-  animation: blinker 2s ease-in-out infinite;
+  animation: blinker 2.5s cubic-bezier(.09,.7,1,.89) infinite;
+}
+
+.container:hover .link {
+  animation: none;
 }
 
 @keyframes blinker {
-  50% { opacity: 0; }
+  50% { opacity: 0.2; }
 }
 
 .contact {
   top: 60%;
 }
 
-.contact a {
+.container {
+  width: 200px;
+  margin: 0px auto;
+  padding: 0px 0px 20px 0px;
+}
+
+.container a {
   display: inline-block;
   position: relative;
   text-decoration: none;
   color: black;
-  font-size: 19px;
+  font-size: 20px;
 }
 
-.contact a:hover:before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px; /* ADJUST HEIGHT TO ADD WEIGHT */
-  background: black; /* CHANGE COLOR TO SUIT */
+.container a:hover {
+  text-decoration: line-through;
+  transition: all 2s linear;
 }
 
 iframe {
   margin: 0px auto;
-  width: 120px;
-  height: 200px;
+  width: 93px;
+  height: 50px;
   overflow: hidden;
   border: none;
 }
