@@ -26,7 +26,7 @@ const Home = () => {
           <div className="container">
             <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
             <br/>
-            <a className="link" href="mailto:license@hivernagerecords.com?subject=Licensing Inquiry">License</a>
+            <a className="link" href="mailto:licensing@hivernagerecords.com?subject=Licensing Inquiry">License</a>
           </div>
 
           <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:757AjSPjO6nQZgHR9lsVst&size=basic&theme=light&show-count=0"
