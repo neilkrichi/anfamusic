@@ -25,6 +25,7 @@ const Home = () => {
           */}
           <div className="container">
             <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
+            <br/>
             <a className="link" href="mailto:license@hivernagerecords.com?subject=Licensing Inquiry">License</a>
           </div>
 
