@@ -59,4 +59,8 @@ iframe {
     width: 150px;
     padding: 150px 0px 20px 0px;
   }
+
+  iframe {
+    margin-left: 5px;
+  }
 }
