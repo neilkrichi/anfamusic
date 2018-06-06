@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Typist from 'react-typist';
 import logo from './assets/logo.eps.svg'
 import './style.css';
 
@@ -15,16 +14,9 @@ const Home = () => {
   return (
     <div className="app">
       <img className="app-logo" src={logo} />
-        {/*
-          <Typist startDelay={2500} cursor={cursor} avgTypingDelay={80}>
-          <a href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
-          </Typist>
-          <Typist startDelay={2500} cursor={cursor} avgTypingDelay={70}>
-          <a href="mailto:license@hivernagerecords.com?subject=Licensing Inquiry">License</a>
-          </Typist>
-          */}
+          {/* <div className="mode">Dark | Light</div> */}
           <div className="container">
-            <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Press</a>
+            <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Media</a>
             <br/>
             <a className="link" href="mailto:licensing@hivernagerecords.com?subject=Licensing Inquiry">License</a>
           </div>
