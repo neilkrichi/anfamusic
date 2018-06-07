@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <div className="app">
       <img className="app-logo" src={logo} />
-          {/* <div className="mode">Dark | Light</div> */}
+         <div className="mode">Dark | Light</div>
           <div className="container">
             <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Media</a>
             <br/>
