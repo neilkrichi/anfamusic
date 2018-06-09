@@ -10,22 +10,29 @@ const cursor = {
   hideWhenDoneDelay: 0,
 }
 
-const Home = () => {
-  return (
-    <div className="app">
-      <img className="app-logo" src={logo} />
-         <div className="mode">Dark | Light</div>
-          <div className="container">
-            <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Media</a>
-            <br/>
-            <a className="link" href="mailto:licensing@hivernagerecords.com?subject=Licensing Inquiry">License</a>
-          </div>
-
-          <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:757AjSPjO6nQZgHR9lsVst&size=basic&theme=light&show-count=0"
-            allowtransparency="true" >
-          </iframe>
-      </div>
-    );
+export default class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      mode: "light"
+    }
   }
 
-  export default Home;
+  render() {
+    return(
+      <div className="app">
+        <img className="app-logo" src={logo} />
+           <div className="mode">Dark | Light</div>
+            <div className="container">
+              <a className="link" href="mailto:press@hivernagerecords.com?subject=Press Inquiry">Media</a>
+              <br/>
+              <a className="link" href="mailto:licensing@hivernagerecords.com?subject=Licensing Inquiry">License</a>
+            </div>
+
+            <iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:757AjSPjO6nQZgHR9lsVst&size=basic&theme=light&show-count=0"
+              allowtransparency="true" >
+            </iframe>
+        </div>
+    )
+  }
+}
