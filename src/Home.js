@@ -14,8 +14,13 @@ export default class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mode: "light"
+      dark: false,
+      background: "light"
     }
+  }
+
+  toggleMode() {
+    this.setState({dark: !this.state.dark})
   }
 
   render() {
